@@ -1,6 +1,6 @@
 {
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
+  "need_generate_pdf": true,
+  "need_generate_intellisense": true,
   "docsets_to_publish": [
     {
       "docset_name": "shuaiyiDocsetTestApril2701",
@@ -31,5 +31,24 @@
       "build_entry_point": "op"
     }
   ],
-  "skip_source_output_uploading": false
+  "skip_source_output_uploading": false,
+  "customized_script": [
+    {
+      "repo_setup": [
+        {
+        	"download_type": "url_download",
+			"package_name": "op.plugin1",
+			"nuget_feed": "https://nuget.org",
+			"version": "1.5.0",
+			"package_entry_point": "startpoint.ps1"
+        },
+        {
+        	"download_type": "url_download",
+          	"script": "github.com/Avocado.ps1"
+        }
+      ],
+      "docset_prebuild": [],
+      "docset_postbuild": []
+    }
+  ]
 }
