@@ -32,19 +32,19 @@
     }
   ],
   "skip_source_output_uploading": false,
-  "customized_script": [
+  "customized_scripts": [
     {
       "repo_setup": [
         {
-        	"download_type": "url_download",
-			"package_name": "op.plugin1",
-			"nuget_feed": "https://nuget.org",
-			"version": "1.5.0",
-			"package_entry_point": "startpoint.ps1"
+        	"download_type": "nuget",
+			"id": "Ship",
+			"nuget_feed": "https://www.nuget.org/api/v2/package",
+			"version": "1.0.2",
+			"package_entry_point": "ship0.ps1"
         },
         {
         	"download_type": "url_download",
-          	"script": "github.com/Avocado.ps1"
+          	"script": "https://raw.githubusercontent.com/ShuaiyiWu/Shuaiyi-Air-Port/master/Avocado.ps1"
         }
       ],
       "docset_prebuild": [],
