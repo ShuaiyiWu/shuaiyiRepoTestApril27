@@ -32,7 +32,7 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [
-      "op.html"
+      "op.html",,
     ],
     "dest": "shuaiyi/shuaiyiDocsetTestApril2702"
   }
